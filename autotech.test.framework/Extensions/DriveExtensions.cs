@@ -49,6 +49,11 @@ namespace autotech.test.framework.Extensions {
             element.SendKeys(text);
         }
 
+        /// <summary>
+        /// Limpa valores em um elemento html
+        /// </summary>
+        /// <param name="by">Tipo do elemento</param>
+        /// <param name="text">Valor de text</param>
         public static void Clear(this IWebDriver driver, By by) {
             IWebElement element = driver.FindElement(by);
             element.Clear();

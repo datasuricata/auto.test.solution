@@ -4,7 +4,6 @@ using autotech.test.hasta.Rules.Auction.Manager;
 using autotech.test.hasta.Rules.Auction.Watcher;
 using Microsoft.Extensions.Configuration;
 using System.IO;
-using System.Threading;
 using Xunit;
 
 namespace autotech.test.hasta.Tests.Auction.Manager {
@@ -91,7 +90,14 @@ namespace autotech.test.hasta.Tests.Auction.Manager {
             manager.SendMessage("Vou vender!");
             manager.ChangeTwice();
             manager.ChangeSale();
+
             manager.EndAuction();
+            watcher.EndAuction();
+            auctioneer.EndAuction();
+
+            manager.CloseTest();
+            watcher.CloseTest();
+            auctioneer.CloseTest();
 
             Assert.True(true);
         }

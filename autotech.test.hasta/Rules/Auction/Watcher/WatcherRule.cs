@@ -24,6 +24,15 @@ namespace autotech.test.hasta.Rules.Auction.Watcher {
             driver.Click(By.XPath("//button[3]/span"));
         }
 
+        public void EndAuction() {
+            driver.WaitBy(TimeSpan.FromSeconds(5), (d) => d.IsDisplayed(By.XPath("//button[contains(.,'Confirmar')]")));
+            driver.Click(By.XPath("//button[contains(.,'Confirmar')]"));
+        }
+
+        public void CloseTest() {
+            driver.ClosePage();
+        }
+
         #endregion
     }
 }

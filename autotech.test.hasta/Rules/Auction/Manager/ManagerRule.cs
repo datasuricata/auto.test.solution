@@ -65,5 +65,9 @@ namespace autotech.test.hasta.Rules.Auction.Manager {
             driver.WaitBy(TimeSpan.FromSeconds(5), (d) => d.IsDisplayed(By.XPath("//button[contains(.,'Confirmar')]")));
             driver.Click(By.XPath("//button[contains(.,'Confirmar')]"));
         }
+
+        public void CloseTest() {
+            driver.ClosePage();
+        }
     }
 }

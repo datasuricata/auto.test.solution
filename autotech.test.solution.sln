@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "autotech.test.framework", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "autotech.test.sample", "autotech.test.sample\autotech.test.sample.csproj", "{FBE8B3E8-4810-4E34-9F0F-F9054B30E1EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autotech.test.hasta", "autotech.test.hasta\autotech.test.hasta.csproj", "{564BA08D-E75A-48E7-A9FA-55702A601B1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "autotech.test.hasta", "autotech.test.hasta\autotech.test.hasta.csproj", "{564BA08D-E75A-48E7-A9FA-55702A601B1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
